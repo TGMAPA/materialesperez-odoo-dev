@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+
+    <t
+        t-name="pos_ticket_materialesperez.OrderReceipt"
+        t-inherit="point_of_sale.OrderReceipt"
+        t-inherit-mode="extension">
+
+        <!-- Eliminar subtotal e impuestos -->
+        <xpath expr="//div[contains(@class,'pos-receipt-taxes')]"
+               position="replace">
+        </xpath>
+
+        <!-- Cambiar TOTAL -->
+        <xpath expr="//span[@class='label-total']"
+               position="replace">
+
+            <span class="label-total">
+                TOTAL A PAGAR
+            </span>
+
+        </xpath>
+
+        <!-- Eliminar Powered by Odoo -->
+        <xpath expr="//div[contains(@class,'footer-powered-by')]"
+               position="replace">
+        </xpath>
+
+    </t>
+
+</templates>

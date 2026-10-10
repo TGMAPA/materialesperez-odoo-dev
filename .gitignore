@@ -1,0 +1,39 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Database backups and dumps
+*.dump
+*.sql
+*.sql.gz
+*.backup
+
+# Odoo data and filestore
+dev-odoo-data/
+test-odoo-data/
+odoo-data/
+filestore/
+sessions/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Editors and operating system
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Empty artifact in copied third-party addon
+dev-custom-addons/pos_multi_uom_price/ehuerta _at_ ixer.mx
